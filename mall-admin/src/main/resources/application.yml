@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  redis:
+    database: 0
+    port: 6379
+    host: 192.168.5.202
+    password: 123456pq
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
+
