@@ -1,0 +1,47 @@
+server:
+  port: 9201
+spring:
+  profiles:
+    active: dev
+  application:
+    name: mall-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    loadbalander:
+      ribbon:
+        enable: false
+    gateway:
+      routes: #配置路由路径
+        - id: mall-auth
+          uri: lb://mall-auth
+          predicates:
+            - Path=/mall-auth/**
+          filters:
+            - StripPrefix=1
+        - id: mall-admin
+          uri: lb://mall-admin
+          predicates:
+            - Path=/mall-admin/**
+          filters:
+            - StripPrefix=1
+      discovery:
+        locator:
+          enabled: true #开启从注册中心动态创建路由的功能
+          lower-case-service-id: true #使用小写服务名，默认是大写
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: 'http://localhost:9401/rsa/publicKey' #配置RSA的公钥访问地址
+  redis:
+    database: 0
+    port: 6379
+    host: 192.168.5.202
+    password: 123456pq
+secure:
+  ignore:
+    urls: #配置白名单路径
+      - "/actuator/**"
+      - "/mall-auth/oauth/token"

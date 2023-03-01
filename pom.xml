@@ -10,8 +10,8 @@
 
     <modules>
         <module>mall-common</module>
-        <module>mall-geteway</module>
         <module>mall-admin</module>
+        <module>mall-auth</module>
     </modules>
 
 
@@ -218,10 +218,6 @@
                     <target>1.8</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
