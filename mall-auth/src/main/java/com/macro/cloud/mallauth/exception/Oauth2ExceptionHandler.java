@@ -1,6 +1,6 @@
 package com.macro.cloud.mallauth.exception;
 
-import com.macro.cloud.mallauth.api.CommonResult;
+import com.macro.cloud.mallcommon.api.CommonResult;
 import org.springframework.security.oauth2.common.exceptions.OAuth2Exception;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

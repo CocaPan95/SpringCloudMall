@@ -1,18 +1,15 @@
 server:
-  port: 9201
+  port: 8201
 spring:
-  profiles:
-    active: dev
-  application:
-    name: mall-gateway
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
   cloud:
-    nacos:
-      discovery:
-        server-addr: localhost:8848
-    loadbalander:
-      ribbon:
-        enable: false
     gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true #使用小写service-id
       routes: #配置路由路径
         - id: mall-auth
           uri: lb://mall-auth
@@ -26,15 +23,11 @@ spring:
             - Path=/mall-admin/**
           filters:
             - StripPrefix=1
-      discovery:
-        locator:
-          enabled: true #开启从注册中心动态创建路由的功能
-          lower-case-service-id: true #使用小写服务名，默认是大写
   security:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: 'http://localhost:9401/rsa/publicKey' #配置RSA的公钥访问地址
+          jwk-set-uri: 'http://localhost:8201/mall-auth/rsa/publicKey' #配置RSA的公钥访问地址
   redis:
     database: 0
     port: 6379
@@ -43,5 +36,33 @@ spring:
 secure:
   ignore:
     urls: #配置白名单路径
+      - "/doc.html"
+      - "/swagger-resources/**"
+      - "/swagger/**"
+      - "/*/v2/api-docs"
+      - "/*/*.js"
+      - "/*/*.css"
+      - "/*/*.png"
+      - "/*/*.ico"
+      - "/webjars/**"
       - "/actuator/**"
       - "/mall-auth/oauth/token"
+      - "/mall-auth/rsa/publicKey"
+      - "/mall-search/**"
+      - "/mall-portal/sso/login"
+      - "/mall-portal/sso/register"
+      - "/mall-portal/sso/getAuthCode"
+      - "/mall-portal/home/**"
+      - "/mall-portal/product/**"
+      - "/mall-portal/brand/**"
+      - "/mall-admin/admin/login"
+      - "/mall-admin/admin/register"
+      - "/mall-admin/minio/upload"
+management: #开启SpringBoot Admin的监控
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

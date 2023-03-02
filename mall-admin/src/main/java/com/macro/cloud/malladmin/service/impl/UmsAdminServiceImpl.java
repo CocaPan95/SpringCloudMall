@@ -2,7 +2,6 @@ package com.macro.cloud.malladmin.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.hutool.extra.spring.SpringUtil;
 import cn.hutool.json.JSONUtil;
 import com.macro.cloud.malladmin.dao.UmsAdminRoleRelationDao;
 import com.macro.cloud.malladmin.service.UmsAdminService;

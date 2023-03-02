@@ -1,7 +1,8 @@
 package com.macro.cloud.mallauth.controller;
 
-import com.macro.cloud.mallauth.api.CommonResult;
 import com.macro.cloud.mallauth.domain.Oauth2TokenDto;
+import com.macro.cloud.mallcommon.api.CommonResult;
+import com.macro.cloud.mallcommon.constant.AuthConstant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.provider.endpoint.TokenEndpoint;
@@ -11,7 +12,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.security.Principal;
+import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -25,17 +27,27 @@ public class AuthController {
     @Autowired
     private TokenEndpoint tokenEndpoint;
 
-    /**
-     * Oauth2登录认证
-     */
     @RequestMapping(value = "/token", method = RequestMethod.POST)
-    public CommonResult<Oauth2TokenDto> postAccessToken(Principal principal, @RequestParam Map<String, String> parameters) throws HttpRequestMethodNotSupportedException {
-        OAuth2AccessToken oAuth2AccessToken = tokenEndpoint.postAccessToken(principal, parameters).getBody();
+    public CommonResult<Oauth2TokenDto> postAccessToken(HttpServletRequest request,
+                                                        @RequestParam String grant_type,
+                                                        @RequestParam String client_id,
+                                                        @RequestParam String client_secret,
+                                                        @RequestParam(required = false) String refresh_token,
+                                                        @RequestParam(required = false) String username,
+                                                        @RequestParam(required = false) String password) throws HttpRequestMethodNotSupportedException {
+        Map<String, String> parameters = new HashMap<>();
+        parameters.put("grant_type",grant_type);
+        parameters.put("client_id",client_id);
+        parameters.put("client_secret",client_secret);
+        parameters.putIfAbsent("refresh_token",refresh_token);
+        parameters.putIfAbsent("username",username);
+        parameters.putIfAbsent("password",password);
+        OAuth2AccessToken oAuth2AccessToken = tokenEndpoint.postAccessToken(request.getUserPrincipal(), parameters).getBody();
         Oauth2TokenDto oauth2TokenDto = Oauth2TokenDto.builder()
                 .token(oAuth2AccessToken.getValue())
                 .refreshToken(oAuth2AccessToken.getRefreshToken().getValue())
                 .expiresIn(oAuth2AccessToken.getExpiresIn())
-                .tokenHead("Bearer ").build();
+                .tokenHead(AuthConstant.JWT_TOKEN_PREFIX).build();
 
         return CommonResult.success(oauth2TokenDto);
     }

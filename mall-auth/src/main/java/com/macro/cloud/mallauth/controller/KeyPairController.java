@@ -4,6 +4,7 @@ import com.nimbusds.jose.jwk.JWKSet;
 import com.nimbusds.jose.jwk.RSAKey;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.security.KeyPair;
@@ -15,12 +16,13 @@ import java.util.Map;
  * Created by macro on 2020/6/19.
  */
 @RestController
+@RequestMapping("/rsa")
 public class KeyPairController {
 
     @Autowired
     private KeyPair keyPair;
 
-    @GetMapping("/rsa/publicKey")
+    @GetMapping("/publicKey")
     public Map<String, Object> getKey() {
         RSAPublicKey publicKey = (RSAPublicKey) keyPair.getPublic();
         RSAKey key = new RSAKey.Builder(publicKey).build();

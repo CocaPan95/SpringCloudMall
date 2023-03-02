@@ -1,6 +1,5 @@
 package com.macro.cloud.model;
 
-import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 import java.math.BigDecimal;
 

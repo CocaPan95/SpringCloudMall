@@ -1,10 +1,10 @@
 package com.macro.cloud.mallgateway.config;
 
 import cn.hutool.core.util.ArrayUtil;
+import com.macro.cloud.mallcommon.constant.AuthConstant;
 import com.macro.cloud.mallgateway.authorization.AuthorizationManager;
 import com.macro.cloud.mallgateway.component.RestAuthenticationEntryPoint;
 import com.macro.cloud.mallgateway.component.RestfulAccessDeniedHandler;
-import com.macro.cloud.mallgateway.constant.AuthConstant;
 import com.macro.cloud.mallgateway.filter.IgnoreUrlsRemoveJwtFilter;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
