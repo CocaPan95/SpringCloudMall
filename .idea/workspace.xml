@@ -5,357 +5,605 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9f5ce03-13db-412b-afbc-4e4bb4197dcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/service/UmsAdminService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-auth/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-auth/src/main/resources/bootstrap-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-auth/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/config/GlobalCorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-gateway/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-gateway/src/main/resources/bootstrap-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/component/ResourceRoleRulesHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsResourceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsResourceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UndoLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UndoLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UndoLogExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/config/SwaggerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/MallAdminApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/MallAdminApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/config/MyBatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/config/MyBatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsAdminCacheService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsAdminCacheServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/MallAdminApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/MallAdminApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/config/MyBatisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/config/MyBatisConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/config/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/config/RedisConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/MallAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/MallAuthApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/api/CommonResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/api/IErrorCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/api/ResultCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/component/JwtTokenEnhancer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/component/JwtTokenEnhancer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/config/Oauth2ServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/config/Oauth2ServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/config/RedisRepositoryConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/constant/RedisConstant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/controller/KeyPairController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/controller/KeyPairController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/domain/SecurityUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/domain/SecurityUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/domain/UserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/exception/Oauth2ExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/exception/Oauth2ExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/service/ResourceServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-auth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/resources/bootstrap-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/resources/bootstrap-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/resources/bootstrap.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/bootstrap-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/bootstrap-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/bootstrap.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/MallAuthApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/MallAuthApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/api/CommonResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/api/IErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/api/ResultCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/component/JwtTokenEnhancer.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/component/JwtTokenEnhancer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/config/Oauth2ServerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/config/Oauth2ServerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/config/RedisRepositoryConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/constant/RedisConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/controller/KeyPairController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/controller/KeyPairController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/domain/SecurityUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/domain/SecurityUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/domain/UserDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/exception/Oauth2ExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/exception/Oauth2ExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/service/ResourceServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/service/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/macro/cloud/mallcommon/config/BaseSwaggerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/macro/cloud/mallcommon/domain/SwaggerProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/macro/cloud/mallcommon/log/WebLogAspect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/target/classes/com/macro/cloud/mallcommon/config/BaseSwaggerConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/target/classes/com/macro/cloud/mallcommon/config/BaseSwaggerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/target/classes/com/macro/cloud/mallcommon/domain/SwaggerProperties$SwaggerPropertiesBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/target/classes/com/macro/cloud/mallcommon/domain/SwaggerProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/target/classes/com/macro/cloud/mallcommon/log/WebLogAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/api/CommonResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/api/IErrorCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/api/ResultCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/authorization/AuthorizationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/authorization/AuthorizationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/component/RestAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/component/RestAuthenticationEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/component/RestfulAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/component/RestfulAccessDeniedHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/config/RedisRepositoryConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/config/ResourceServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/constant/AuthConstant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/constant/RedisConstant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/filter/AuthGlobalFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/filter/AuthGlobalFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/macro/cloud/mallcommon/config/BaseRedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/macro/cloud/mallcommon/config/BaseRedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/target/classes/com/macro/cloud/mallcommon/config/BaseRedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/target/classes/com/macro/cloud/mallcommon/config/BaseRedisConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/com/macro/cloud/mallgateway/api/CommonResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/com/macro/cloud/mallgateway/api/IErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/com/macro/cloud/mallgateway/api/ResultCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/com/macro/cloud/mallgateway/authorization/AuthorizationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/target/classes/com/macro/cloud/mallgateway/authorization/AuthorizationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/com/macro/cloud/mallgateway/component/RestAuthenticationEntryPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/target/classes/com/macro/cloud/mallgateway/component/RestAuthenticationEntryPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/com/macro/cloud/mallgateway/component/RestfulAccessDeniedHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/target/classes/com/macro/cloud/mallgateway/component/RestfulAccessDeniedHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/com/macro/cloud/mallgateway/config/RedisRepositoryConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/com/macro/cloud/mallgateway/config/ResourceServerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/target/classes/com/macro/cloud/mallgateway/config/ResourceServerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/com/macro/cloud/mallgateway/constant/AuthConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/com/macro/cloud/mallgateway/constant/RedisConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/com/macro/cloud/mallgateway/filter/AuthGlobalFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/target/classes/com/macro/cloud/mallgateway/filter/AuthGlobalFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/CommentGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/CommentGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/OmsCartItemMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/OmsOrderItemMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/OmsOrderMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/OmsOrderSettingMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsBrandMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsProductAttributeMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsProductAttributeValueMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsProductFullReductionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsProductLadderMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsProductMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsSkuStockMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/SmsCouponHistoryMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/SmsCouponMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/SmsCouponProductCategoryRelationMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/SmsCouponProductRelationMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsAdminLoginLogMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsAdminMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsAdminPermissionRelationMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsAdminRoleRelationMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsIntegrationConsumeSettingMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsMemberLevelMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsMemberMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsMemberReceiveAddressMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsPermissionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsResourceMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsRoleMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsRolePermissionRelationMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsRoleResourceRelationMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UndoLogMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsCartItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsCartItemExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderItemExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderSetting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderSettingExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsBrand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsBrandExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductAttribute.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductAttributeExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductAttributeValue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductAttributeValueExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductFullReduction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductFullReductionExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductLadder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductLadderExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsSkuStock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsSkuStockExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsCoupon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsCouponExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsCouponHistory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsCouponHistoryExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsCouponProductCategoryRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsCouponProductCategoryRelationExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsCouponProductRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsCouponProductRelationExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdmin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdminExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdminLoginLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdminLoginLogExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdminPermissionRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdminPermissionRelationExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdminRoleRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdminRoleRelationExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsIntegrationConsumeSetting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsIntegrationConsumeSettingExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMember.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberLevel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberLevelExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberReceiveAddress.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberReceiveAddressExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsPermission.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsPermissionExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsResourceExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsRoleExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsRolePermissionRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsRolePermissionRelationExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsRoleResourceRelation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsRoleResourceRelationExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UndoLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UndoLogExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/CmsHelpCategoryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/CmsHelpMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/CmsMemberReportMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/CmsPrefrenceAreaMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/CmsPrefrenceAreaProductRelationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/CmsSubjectCategoryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/CmsSubjectCommentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/CmsSubjectMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/CmsSubjectProductRelationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/CmsTopicCategoryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/CmsTopicCommentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/CmsTopicMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/OmsCompanyAddressMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/OmsOrderOperateHistoryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/OmsOrderReturnApplyMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/OmsOrderReturnReasonMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/OrderssMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsAlbumMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsAlbumPicMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsCommentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsCommentReplayMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsFeightTemplateMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsMemberPriceMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsProductAttributeCategoryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsProductCategoryAttributeRelationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsProductCategoryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsProductOperateLogMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsProductVertifyRecordMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/SmsFlashPromotionLogMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/SmsFlashPromotionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/SmsFlashPromotionProductRelationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/SmsFlashPromotionSessionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/SmsHomeAdvertiseMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/SmsHomeBrandMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/SmsHomeNewProductMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/SmsHomeRecommendProductMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/SmsHomeRecommendSubjectMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsGrowthChangeHistoryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsIntegrationChangeHistoryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsMemberLoginLogMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsMemberMemberTagRelationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsMemberProductCategoryRelationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsMemberRuleSettingMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsMemberStatisticsInfoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsMemberTagMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsMemberTaskMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsMenuMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsResourceCategoryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsRoleMenuRelationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsHelp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsHelpCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsHelpCategoryExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsHelpExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsMemberReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsMemberReportExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsPrefrenceArea.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsPrefrenceAreaExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsPrefrenceAreaProductRelation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsPrefrenceAreaProductRelationExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsSubject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsSubjectCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsSubjectCategoryExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsSubjectComment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsSubjectCommentExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsSubjectExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsSubjectProductRelation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsSubjectProductRelationExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsTopic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsTopicCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsTopicCategoryExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsTopicComment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsTopicCommentExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/CmsTopicExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsCompanyAddress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsCompanyAddressExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderOperateHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderOperateHistoryExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderReturnApply.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderReturnApplyExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderReturnReason.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderReturnReasonExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/Orderss.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OrderssExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsAlbum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsAlbumExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsAlbumPic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsAlbumPicExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsComment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsCommentExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsCommentReplay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsCommentReplayExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsFeightTemplate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsFeightTemplateExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsMemberPrice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsMemberPriceExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductAttributeCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductAttributeCategoryExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductCategoryAttributeRelation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductCategoryAttributeRelationExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductCategoryExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductOperateLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductOperateLogExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductVertifyRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductVertifyRecordExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsFlashPromotion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsFlashPromotionExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsFlashPromotionLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsFlashPromotionLogExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsFlashPromotionProductRelation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsFlashPromotionProductRelationExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsFlashPromotionSession.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsFlashPromotionSessionExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsHomeAdvertise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsHomeAdvertiseExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsHomeBrand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsHomeBrandExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsHomeNewProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsHomeNewProductExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsHomeRecommendProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsHomeRecommendProductExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsHomeRecommendSubject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/SmsHomeRecommendSubjectExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsGrowthChangeHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsGrowthChangeHistoryExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsIntegrationChangeHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsIntegrationChangeHistoryExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberLoginLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberLoginLogExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberMemberTagRelation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberMemberTagRelationExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberProductCategoryRelation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberProductCategoryRelationExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberRuleSetting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberRuleSettingExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberStatisticsInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberStatisticsInfoExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberTag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberTagExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberTaskExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMenuExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsResourceCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsResourceCategoryExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsRoleMenuRelation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsRoleMenuRelationExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UserExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/CmsHelpCategoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/CmsHelpMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/CmsMemberReportMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/CmsPrefrenceAreaMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/CmsPrefrenceAreaProductRelationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/CmsSubjectCategoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/CmsSubjectCommentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/CmsSubjectMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/CmsSubjectProductRelationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/CmsTopicCategoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/CmsTopicCommentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/CmsTopicMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/OmsCompanyAddressMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/OmsOrderOperateHistoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/OmsOrderReturnApplyMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/OmsOrderReturnReasonMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/OrderssMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsAlbumMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsAlbumPicMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsCommentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsCommentReplayMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsFeightTemplateMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsMemberPriceMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsProductAttributeCategoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsProductCategoryAttributeRelationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsProductCategoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsProductOperateLogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsProductVertifyRecordMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/SmsFlashPromotionLogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/SmsFlashPromotionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/SmsFlashPromotionProductRelationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/SmsFlashPromotionSessionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/SmsHomeAdvertiseMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/SmsHomeBrandMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/SmsHomeNewProductMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/SmsHomeRecommendProductMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/SmsHomeRecommendSubjectMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsGrowthChangeHistoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsIntegrationChangeHistoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsMemberLoginLogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsMemberMemberTagRelationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsMemberProductCategoryRelationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsMemberRuleSettingMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsMemberStatisticsInfoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsMemberTagMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsMemberTaskMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsMenuMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsResourceCategoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsRoleMenuRelationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UserMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/generator.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/CommentGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/CommentGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/OmsCartItemMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/OmsOrderItemMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/OmsOrderMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/OmsOrderSettingMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsBrandMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsProductAttributeMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsProductAttributeValueMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsProductFullReductionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsProductLadderMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsProductMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsSkuStockMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsCouponHistoryMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsCouponMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsCouponProductCategoryRelationMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsCouponProductRelationMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsAdminLoginLogMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsAdminMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsAdminPermissionRelationMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsAdminRoleRelationMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsIntegrationConsumeSettingMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMemberLevelMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMemberMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMemberReceiveAddressMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsPermissionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsResourceMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsRoleMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsRolePermissionRelationMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsRoleResourceRelationMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UndoLogMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsCartItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsCartItemExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsCartItemExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsCartItemExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsCartItemExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderItemExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderItemExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderItemExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderItemExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderSetting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderSettingExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderSettingExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderSettingExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderSettingExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsBrand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsBrandExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsBrandExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsBrandExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsBrandExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductAttribute.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductAttributeExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductAttributeExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductAttributeExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductAttributeExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductAttributeValue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductAttributeValueExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductAttributeValueExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductAttributeValueExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductAttributeValueExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductFullReduction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductFullReductionExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductFullReductionExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductFullReductionExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductFullReductionExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductLadder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductLadderExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductLadderExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductLadderExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductLadderExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsSkuStock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsSkuStockExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsSkuStockExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsSkuStockExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsSkuStockExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCoupon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponHistory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponHistoryExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponHistoryExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponHistoryExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponHistoryExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponProductCategoryRelation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponProductCategoryRelationExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponProductCategoryRelationExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponProductCategoryRelationExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponProductCategoryRelationExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponProductRelation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponProductRelationExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponProductRelationExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponProductRelationExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsCouponProductRelationExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdmin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminLoginLog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminLoginLogExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminLoginLogExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminLoginLogExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminLoginLogExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminPermissionRelation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminPermissionRelationExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminPermissionRelationExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminPermissionRelationExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminPermissionRelationExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminRoleRelation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminRoleRelationExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminRoleRelationExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminRoleRelationExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsAdminRoleRelationExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsIntegrationConsumeSetting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsIntegrationConsumeSettingExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsIntegrationConsumeSettingExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsIntegrationConsumeSettingExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsIntegrationConsumeSettingExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMember.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberLevel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberLevelExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberLevelExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberLevelExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberLevelExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberReceiveAddress.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberReceiveAddressExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberReceiveAddressExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberReceiveAddressExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberReceiveAddressExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsPermission.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsPermissionExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsPermissionExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsPermissionExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsPermissionExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsResourceExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsResourceExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsResourceExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsResourceExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRoleExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRoleExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRoleExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRoleExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRolePermissionRelation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRolePermissionRelationExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRolePermissionRelationExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRolePermissionRelationExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRolePermissionRelationExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRoleResourceRelation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRoleResourceRelationExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRoleResourceRelationExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRoleResourceRelationExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRoleResourceRelationExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UndoLog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UndoLogExample$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UndoLogExample$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UndoLogExample$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UndoLogExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsHelpCategoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsHelpCategoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsHelpMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsHelpMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsMemberReportMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsMemberReportMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsPrefrenceAreaMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsPrefrenceAreaMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsPrefrenceAreaProductRelationMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsPrefrenceAreaProductRelationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsSubjectCategoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsSubjectCategoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsSubjectCommentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsSubjectCommentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsSubjectMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsSubjectMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsSubjectProductRelationMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsSubjectProductRelationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsTopicCategoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsTopicCategoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsTopicCommentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsTopicCommentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsTopicMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/CmsTopicMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/OmsCompanyAddressMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/OmsCompanyAddressMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/OmsOrderOperateHistoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/OmsOrderOperateHistoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/OmsOrderReturnApplyMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/OmsOrderReturnApplyMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/OmsOrderReturnReasonMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/OmsOrderReturnReasonMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/OrderssMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/OrderssMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsAlbumMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsAlbumMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsAlbumPicMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsAlbumPicMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsCommentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsCommentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsCommentReplayMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsCommentReplayMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsFeightTemplateMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsFeightTemplateMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsMemberPriceMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsMemberPriceMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsProductAttributeCategoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsProductAttributeCategoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsProductCategoryAttributeRelationMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsProductCategoryAttributeRelationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsProductCategoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsProductCategoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsProductOperateLogMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsProductOperateLogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsProductVertifyRecordMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsProductVertifyRecordMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsFlashPromotionLogMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsFlashPromotionLogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsFlashPromotionMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsFlashPromotionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsFlashPromotionProductRelationMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsFlashPromotionProductRelationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsFlashPromotionSessionMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsFlashPromotionSessionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsHomeAdvertiseMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsHomeAdvertiseMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsHomeBrandMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsHomeBrandMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsHomeNewProductMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsHomeNewProductMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsHomeRecommendProductMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsHomeRecommendProductMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsHomeRecommendSubjectMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/SmsHomeRecommendSubjectMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsGrowthChangeHistoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsGrowthChangeHistoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsIntegrationChangeHistoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsIntegrationChangeHistoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMemberLoginLogMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMemberLoginLogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMemberMemberTagRelationMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMemberMemberTagRelationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMemberProductCategoryRelationMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMemberProductCategoryRelationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMemberRuleSettingMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMemberRuleSettingMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMemberStatisticsInfoMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMemberStatisticsInfoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMemberTagMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMemberTagMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMemberTaskMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMemberTaskMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMenuMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsMenuMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsResourceCategoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsResourceCategoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsRoleMenuRelationMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UmsRoleMenuRelationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsHelp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsHelpCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsHelpCategoryExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsHelpCategoryExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsHelpCategoryExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsHelpCategoryExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsHelpExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsHelpExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsHelpExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsHelpExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsMemberReport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsMemberReportExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsMemberReportExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsMemberReportExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsMemberReportExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsPrefrenceArea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsPrefrenceAreaExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsPrefrenceAreaExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsPrefrenceAreaExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsPrefrenceAreaExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsPrefrenceAreaProductRelation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsPrefrenceAreaProductRelationExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsPrefrenceAreaProductRelationExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsPrefrenceAreaProductRelationExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsPrefrenceAreaProductRelationExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectCategoryExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectCategoryExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectCategoryExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectCategoryExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectComment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectCommentExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectCommentExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectCommentExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectProductRelation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectProductRelationExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectProductRelationExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectProductRelationExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsSubjectProductRelationExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsTopic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsTopicCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsTopicCategoryExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsTopicCategoryExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsTopicCategoryExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsTopicCategoryExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsTopicComment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsTopicCommentExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsTopicCommentExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsTopicCommentExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsTopicCommentExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsTopicExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsTopicExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsTopicExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/CmsTopicExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsCompanyAddress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsCompanyAddressExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsCompanyAddressExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsCompanyAddressExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsCompanyAddressExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderOperateHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderOperateHistoryExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderOperateHistoryExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderOperateHistoryExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderOperateHistoryExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderReturnApply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderReturnApplyExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderReturnApplyExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderReturnApplyExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderReturnApplyExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderReturnReason.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderReturnReasonExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderReturnReasonExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderReturnReasonExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OmsOrderReturnReasonExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/Orderss.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OrderssExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OrderssExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OrderssExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/OrderssExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsAlbum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsAlbumExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsAlbumExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsAlbumExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsAlbumExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsAlbumPic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsAlbumPicExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsAlbumPicExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsAlbumPicExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsAlbumPicExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsComment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsCommentExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsCommentExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsCommentExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsCommentExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsCommentReplay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsCommentReplayExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsCommentReplayExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsCommentReplayExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsCommentReplayExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsFeightTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsFeightTemplateExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsFeightTemplateExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsFeightTemplateExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsFeightTemplateExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsMemberPrice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsMemberPriceExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsMemberPriceExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsMemberPriceExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsMemberPriceExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductAttributeCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductAttributeCategoryExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductAttributeCategoryExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductAttributeCategoryExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductAttributeCategoryExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductCategoryAttributeRelation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductCategoryAttributeRelationExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductCategoryAttributeRelationExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductCategoryAttributeRelationExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductCategoryAttributeRelationExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductCategoryExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductCategoryExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductCategoryExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductCategoryExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductOperateLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductOperateLogExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductOperateLogExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductOperateLogExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductOperateLogExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductVertifyRecord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductVertifyRecordExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductVertifyRecordExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductVertifyRecordExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductVertifyRecordExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionLogExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionLogExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionLogExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionLogExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionProductRelation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionProductRelationExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionProductRelationExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionProductRelationExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionProductRelationExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionSession.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionSessionExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionSessionExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionSessionExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsFlashPromotionSessionExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeAdvertise.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeAdvertiseExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeAdvertiseExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeAdvertiseExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeAdvertiseExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeBrand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeBrandExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeBrandExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeBrandExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeBrandExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeNewProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeNewProductExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeNewProductExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeNewProductExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeNewProductExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeRecommendProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeRecommendProductExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeRecommendProductExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeRecommendProductExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeRecommendProductExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeRecommendSubject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeRecommendSubjectExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeRecommendSubjectExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeRecommendSubjectExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/SmsHomeRecommendSubjectExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsGrowthChangeHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsGrowthChangeHistoryExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsGrowthChangeHistoryExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsGrowthChangeHistoryExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsGrowthChangeHistoryExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsIntegrationChangeHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsIntegrationChangeHistoryExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsIntegrationChangeHistoryExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsIntegrationChangeHistoryExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsIntegrationChangeHistoryExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberLoginLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberLoginLogExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberLoginLogExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberLoginLogExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberLoginLogExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberMemberTagRelation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberMemberTagRelationExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberMemberTagRelationExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberMemberTagRelationExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberMemberTagRelationExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberProductCategoryRelation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberProductCategoryRelationExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberProductCategoryRelationExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberProductCategoryRelationExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberProductCategoryRelationExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberRuleSetting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberRuleSettingExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberRuleSettingExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberRuleSettingExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberRuleSettingExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberStatisticsInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberStatisticsInfoExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberStatisticsInfoExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberStatisticsInfoExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberStatisticsInfoExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberTag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberTagExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberTagExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberTagExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberTagExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberTaskExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberTaskExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberTaskExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMemberTaskExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMenuExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMenuExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMenuExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsMenuExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsResourceCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsResourceCategoryExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsResourceCategoryExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsResourceCategoryExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsResourceCategoryExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRoleMenuRelation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRoleMenuRelationExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRoleMenuRelationExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRoleMenuRelationExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UmsRoleMenuRelationExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UserExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UserExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UserExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UserExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/target/classes/generator.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -389,7 +637,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/project/SpringCloudMall/mall-auth/src/main/resources",
+    "last_opened_file_path": "D:/project/SpringCloudMall",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -397,12 +645,17 @@
     "spring.configuration.checksum": "cb3bce0595d9dbea46cce02b1705747f"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\SpringCloudMall\mall-auth\src\main\resources" />
       <recent name="D:\project\SpringCloudMall\mall-gateway\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.macro.cloud.malladmin.service" />
+      <recent name="com.macro.cloud.malladmin.component" />
       <recent name="com.macro.cloud.mallauth.service" />
       <recent name="com.macro.cloud.mallgateway.config" />
     </key>
@@ -450,8 +703,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Generator" />
         <item itemvalue="Spring Boot.MallGatewayApplication" />
+        <item itemvalue="Application.Generator" />
       </list>
     </recent_temporary>
   </component>
@@ -466,6 +719,7 @@
       <workItem from="1677674799295" duration="2161000" />
       <workItem from="1677765010262" duration="227000" />
       <workItem from="1677765277174" duration="3665000" />
+      <workItem from="1677808533285" duration="8940000" />
     </task>
     <servers />
   </component>
@@ -485,5 +739,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/authorization/AuthorizationManager.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/filter/AuthGlobalFilter.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/authorization/AuthorizationManager.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
