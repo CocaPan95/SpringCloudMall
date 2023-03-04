@@ -4,6 +4,7 @@ import cn.hutool.core.collection.CollUtil;
 import com.macro.cloud.mallauth.constant.MessageConstant;
 import com.macro.cloud.mallauth.domain.SecurityUser;
 import com.macro.cloud.mallauth.service.UmsAdminService;
+import com.macro.cloud.mallauth.service.UmsMemberService;
 import com.macro.cloud.mallcommon.constant.AuthConstant;
 import com.macro.cloud.mallcommon.domain.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +35,8 @@ public class UserServiceImpl implements UserDetailsService {
     private UmsAdminService adminService;
 
     @Autowired
+    private UmsMemberService umsMemberService;
+    @Autowired
     private HttpServletRequest request;
 
     @Override
@@ -43,7 +46,7 @@ public class UserServiceImpl implements UserDetailsService {
         if(AuthConstant.ADMIN_CLIENT_ID.equals(clientId)){
             userDto = adminService.loadUserByUsername(username);
         }else{
-            userDto = adminService.loadUserByUsername(username);
+            userDto = umsMemberService.loadUserByUsername(username);
         }
         if (userDto==null) {
             throw new UsernameNotFoundException(MessageConstant.USERNAME_PASSWORD_ERROR);
