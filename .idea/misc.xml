@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/mall-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/mall-mbg/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-auth/pom.xml" />
       </list>
     </option>
   </component>

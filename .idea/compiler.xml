@@ -20,7 +20,7 @@
       <module name="SpringCloudMall" options="-parameters" />
       <module name="mall-admin" options="-parameters" />
       <module name="mall-auth" options="-parameters" />
-      <module name="mall-coca" options="" />
+      <module name="mall-coca" options="-parameters" />
       <module name="mall-common" options="-parameters" />
       <module name="mall-gateway" options="-parameters" />
       <module name="mall-mbg" options="-parameters" />
