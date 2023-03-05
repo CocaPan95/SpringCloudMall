@@ -4,28 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9f5ce03-13db-412b-afbc-4e4bb4197dcf" name="Changes" comment="代码嵌入，用户有关操作">
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsMemberLevelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsResourceCategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsResourceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsRoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/UmsMenuNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsMemberLevelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsMenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsResourceCategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsMemberLevelServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsMenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsResourceCategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsResourceCategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsResourceCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsResourceCategoryExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsResourceCategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsResourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsResourceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsRoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsResourceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsResourceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsRoleServiceImpl.java" afterDir="false" />
+    <list default="true" id="c9f5ce03-13db-412b-afbc-4e4bb4197dcf" name="Changes" comment="认证权限相关功能">
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/service/UmsResourceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/service/UmsResourceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/service/UmsRoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/service/UmsRoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/service/impl/UmsResourceServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/service/impl/UmsResourceServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/service/impl/UmsRoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/service/impl/UmsRoleServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +168,7 @@
       <workItem from="1677808533285" duration="9314000" />
       <workItem from="1677930495521" duration="69000" />
       <workItem from="1677930583968" duration="9888000" />
-      <workItem from="1677982098014" duration="3651000" />
+      <workItem from="1677982098014" duration="4295000" />
     </task>
     <task id="LOCAL-00001" summary="网关+认证+服务注册">
       <created>1677835962883</created>
@@ -215,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677940531931</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="认证权限相关功能">
+      <created>1677986037826</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677986037826</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +228,8 @@
     <MESSAGE value="删除一些没必要的文件" />
     <MESSAGE value="代码嵌入，增加客户端模块" />
     <MESSAGE value="代码嵌入，用户有关操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="代码嵌入，用户有关操作" />
+    <MESSAGE value="认证权限相关功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="认证权限相关功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
