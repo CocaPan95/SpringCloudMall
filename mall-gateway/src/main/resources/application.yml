@@ -43,6 +43,7 @@ secure:
   ignore:
     urls: #配置白名单路径
       - "/doc.html"
+      - "/swagger-ui.html"
       - "/swagger-resources/**"
       - "/swagger/**"
       - "/*/v2/api-docs"

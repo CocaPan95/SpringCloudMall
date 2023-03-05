@@ -44,7 +44,8 @@ public class CommentGenerator extends DefaultCommentGenerator {
             if(remarks.contains("\"")){
                 remarks = remarks.replace("\"","'");
             }
-
+            //给model的字段添加swagger注解
+            field.addJavaDocLine("@ApiModelProperty(value = \""+remarks+"\")");
         }
     }
 
@@ -67,8 +68,8 @@ public class CommentGenerator extends DefaultCommentGenerator {
     public void addJavaFileComment(CompilationUnit compilationUnit) {
         super.addJavaFileComment(compilationUnit);
         //只在model中添加swagger注解类的导入
-//        if(!compilationUnit.getType().getFullyQualifiedName().contains(MAPPER_SUFFIX)&&!compilationUnit.getType().getFullyQualifiedName().contains(EXAMPLE_SUFFIX)){
-//            compilationUnit.addImportedType(new FullyQualifiedJavaType(API_MODEL_PROPERTY_FULL_CLASS_NAME));
-//        }
+        if(!compilationUnit.getType().getFullyQualifiedName().contains(MAPPER_SUFFIX)&&!compilationUnit.getType().getFullyQualifiedName().contains(EXAMPLE_SUFFIX)){
+            compilationUnit.addImportedType(new FullyQualifiedJavaType(API_MODEL_PROPERTY_FULL_CLASS_NAME));
+        }
     }
 }

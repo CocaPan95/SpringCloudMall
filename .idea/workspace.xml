@@ -5,10 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9f5ce03-13db-412b-afbc-4e4bb4197dcf" name="Changes" comment="认证权限相关功能">
-      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/service/UmsResourceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/service/UmsResourceService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/service/UmsRoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/service/UmsRoleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/service/impl/UmsResourceServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/service/impl/UmsResourceServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/service/impl/UmsRoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/service/impl/UmsRoleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/macro/cloud/mallcommon/config/BaseSwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/macro/cloud/mallcommon/domain/SwaggerProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/config/SwaggerResourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/handler/SwaggerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsMemberLevelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsMemberLevelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsResourceCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsResourceCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsResourceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsResourceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsRoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/UmsAdminLoginParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/UmsAdminLoginParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/UmsAdminParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/UmsAdminParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/UmsMenuNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/UmsMenuNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/UpdateAdminPasswordParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/UpdateAdminPasswordParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/controller/UmsAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/controller/UmsAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/controller/UmsMemberLevelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/controller/UmsMemberLevelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/controller/UmsMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/controller/UmsMenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/controller/UmsResourceCategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/controller/UmsResourceCategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/controller/UmsResourceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/controller/UmsResourceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/controller/UmsRoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/controller/UmsRoleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/dto/UmsAdminLoginParam.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/dto/UmsAdminLoginParam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/dto/UmsAdminParam.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/dto/UmsAdminParam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/dto/UmsMenuNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/dto/UmsMenuNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/dto/UpdateAdminPasswordParam.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/com/macro/cloud/malladmin/dto/UpdateAdminPasswordParam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/controller/KeyPairController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/controller/KeyPairController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/domain/Oauth2TokenDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/src/main/java/com/macro/cloud/mallauth/domain/Oauth2TokenDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/CommentGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/CommentGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdminLoginLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdminLoginLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdminRoleRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdminRoleRelation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsResourceCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsResourceCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsRoleMenuRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsRoleMenuRelation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsRolePermissionRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsRolePermissionRelation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsRoleResourceRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsRoleResourceRelation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/controller/UmsMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/controller/UmsMemberController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,13 +128,14 @@
       <recent name="D:\project\SpringCloudMall\mall-auth" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.macro.cloud.malladmin.service" />
-      <recent name="com.macro.cloud.malladmin.component" />
-      <recent name="com.macro.cloud.mallauth.service" />
+      <recent name="com.macro.cloud.mallportal.config" />
+      <recent name="com.macro.cloud.mallauth.config" />
+      <recent name="com.macro.cloud.mallgateway.handler" />
       <recent name="com.macro.cloud.mallgateway.config" />
+      <recent name="com.macro.cloud.malladmin.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MallAdminApplication">
+  <component name="RunManager" selected="Spring Boot.MallPortalApplication">
     <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.macro.cloud.Generator" />
       <module name="mall-mbg" />
@@ -168,7 +217,7 @@
       <workItem from="1677808533285" duration="9314000" />
       <workItem from="1677930495521" duration="69000" />
       <workItem from="1677930583968" duration="9888000" />
-      <workItem from="1677982098014" duration="4295000" />
+      <workItem from="1677982098014" duration="9615000" />
     </task>
     <task id="LOCAL-00001" summary="网关+认证+服务注册">
       <created>1677835962883</created>
@@ -205,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677986037826</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="认证权限相关功能">
+      <created>1678003733862</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678003733862</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

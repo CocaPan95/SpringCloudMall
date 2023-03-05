@@ -3,6 +3,9 @@ package com.macro.cloud.mallauth.controller;
 import com.macro.cloud.mallauth.domain.Oauth2TokenDto;
 import com.macro.cloud.mallcommon.api.CommonResult;
 import com.macro.cloud.mallcommon.constant.AuthConstant;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.provider.endpoint.TokenEndpoint;
@@ -21,20 +24,22 @@ import java.util.Map;
  * Created by macro on 2020/7/17.
  */
 @RestController
+@Api(tags = "AuthController", description = "认证中心登录认证")
 @RequestMapping("/oauth")
 public class AuthController {
 
     @Autowired
     private TokenEndpoint tokenEndpoint;
 
+    @ApiOperation("Oauth2获取token")
     @RequestMapping(value = "/token", method = RequestMethod.POST)
     public CommonResult<Oauth2TokenDto> postAccessToken(HttpServletRequest request,
-                                                        @RequestParam String grant_type,
-                                                        @RequestParam String client_id,
-                                                        @RequestParam String client_secret,
-                                                        @RequestParam(required = false) String refresh_token,
-                                                        @RequestParam(required = false) String username,
-                                                        @RequestParam(required = false) String password) throws HttpRequestMethodNotSupportedException {
+                                                        @ApiParam("授权模式") @RequestParam String grant_type,
+                                                        @ApiParam("Oauth2客户端ID") @RequestParam String client_id,
+                                                        @ApiParam("Oauth2客户端秘钥") @RequestParam String client_secret,
+                                                        @ApiParam("刷新token") @RequestParam(required = false) String refresh_token,
+                                                        @ApiParam("登录用户名") @RequestParam(required = false) String username,
+                                                        @ApiParam("登录密码") @RequestParam(required = false) String password) throws HttpRequestMethodNotSupportedException {
         Map<String, String> parameters = new HashMap<>();
         parameters.put("grant_type",grant_type);
         parameters.put("client_id",client_id);
