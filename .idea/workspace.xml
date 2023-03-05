@@ -4,41 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9f5ce03-13db-412b-afbc-4e4bb4197dcf" name="Changes" comment="代码嵌入，增加客户端模块">
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dao/UmsRoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/UmsAdminLoginParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/UmsAdminParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/UpdateAdminPasswordParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsAdminCacheService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsAdminCacheServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsRoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/dao/UmsRoleDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsAdminLoginLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsMemberLevelMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsMenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdminLoginLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdminLoginLogExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberLevelExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMenuExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsAdminLoginLogMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsMemberLevelMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsMenuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/UmsMemberCacheService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/impl/UmsMemberCacheServiceImpl.java" afterDir="false" />
+    <list default="true" id="c9f5ce03-13db-412b-afbc-4e4bb4197dcf" name="Changes" comment="代码嵌入，用户有关操作">
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsMemberLevelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsResourceCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsResourceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/UmsMenuNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsMemberLevelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsResourceCategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsMemberLevelServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsResourceCategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsResourceCategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsResourceCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsResourceCategoryExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsResourceCategoryMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UmsAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/domain/UserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsAdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsAdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsAdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/controller/UmsMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/controller/UmsMemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/UmsMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/UmsMemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/impl/UmsMemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/impl/UmsMemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsResourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsResourceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/UmsRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsResourceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsResourceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/UmsRoleServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -86,12 +73,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/project/SpringCloudMall/mall-admin/src/main/resources/dao",
+    "last_opened_file_path": "D:/project/SpringCloudMall",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "show.run.dashboard.notification": "false",
-    "spring.configuration.checksum": "6235556da17eacb420c884b3bc11f409"
+    "spring.configuration.checksum": "222eab46f4439281d463382dfcac64f4"
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -116,7 +103,7 @@
       <recent name="com.macro.cloud.mallgateway.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MallPortalApplication">
+  <component name="RunManager" selected="Spring Boot.MallAdminApplication">
     <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.macro.cloud.Generator" />
       <module name="mall-mbg" />
@@ -197,7 +184,8 @@
       <workItem from="1677765277174" duration="3665000" />
       <workItem from="1677808533285" duration="9314000" />
       <workItem from="1677930495521" duration="69000" />
-      <workItem from="1677930583968" duration="9320000" />
+      <workItem from="1677930583968" duration="9888000" />
+      <workItem from="1677982098014" duration="3651000" />
     </task>
     <task id="LOCAL-00001" summary="网关+认证+服务注册">
       <created>1677835962883</created>
@@ -220,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677935543616</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="代码嵌入，用户有关操作">
+      <created>1677940531931</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677940531931</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +237,8 @@
     <MESSAGE value="网关+认证+服务注册" />
     <MESSAGE value="删除一些没必要的文件" />
     <MESSAGE value="代码嵌入，增加客户端模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="代码嵌入，增加客户端模块" />
+    <MESSAGE value="代码嵌入，用户有关操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码嵌入，用户有关操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
