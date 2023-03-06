@@ -18,7 +18,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="SpringCloudMall" options="-parameters" />
+      <module name="SpringCloudMall" options="" />
       <module name="mall-admin" options="-parameters" />
       <module name="mall-auth" options="-parameters" />
       <module name="mall-coca" options="-parameters" />
