@@ -4,40 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9f5ce03-13db-412b-afbc-4e4bb4197dcf" name="Changes" comment="品牌和商品类别">
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/PmsBrandController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/PmsBrandParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/PmsProductCategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/PmsProductCategoryWithChildrenItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/PmsBrandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/PmsBrandServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/dao/PmsProductCategoryDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsBrandMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsBrand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsBrandExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsBrandMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsProductMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/PmsProductMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProduct.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductExample$Criteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductExample$Criterion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductExample$GeneratedCriteria.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/PmsProductExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/controller/PmsPortalProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/controller/PortalBrandController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/domain/PmsProductCategoryNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/PmsPortalProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/PortalBrandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/impl/PmsPortalProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/impl/PortalBrandServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_3_6_13_08__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_3_6_13_08__Changes_.xml" afterDir="false" />
+    <list default="true" id="c9f5ce03-13db-412b-afbc-4e4bb4197dcf" name="Changes" comment="代码嵌入关于sku">
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/PmsProductAttributeCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/PmsProductAttributeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/PmsProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dao/PmsProductAttributeCategoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dao/PmsProductAttributeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/PmsProductAttributeCategoryItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/PmsProductAttributeParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/ProductAttrInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/PmsProductAttributeCategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/PmsProductAttributeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/PmsProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/PmsProductAttributeCategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/PmsProductAttributeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/PmsProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/dao/PmsProductAttributeCategoryDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/dao/PmsProductAttributeDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsProductAttributeCategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsProductAttributeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsProductAttributeValueMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsSkuStockMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductAttribute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductAttributeCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductAttributeCategoryExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductAttributeExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductAttributeValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductAttributeValueExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsSkuStock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsSkuStockExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsProductAttributeCategoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsProductAttributeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsProductAttributeValueMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsSkuStockMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/PmsProductCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/PmsProductCategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/PmsProductCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/PmsProductCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/PmsProductCategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dao/PmsProductCategoryDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/PmsProductCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/PmsProductCategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/generator.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/target/classes/generator.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +61,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -73,25 +81,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/project/SpringCloudMall/mall-admin/src/main/resources/dao",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "show.run.dashboard.notification": "false",
-    "spring.configuration.checksum": "222eab46f4439281d463382dfcac64f4"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/project/SpringCloudMall/mall-admin/src/main/resources/dao&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;show.run.dashboard.notification&quot;: &quot;false&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;222eab46f4439281d463382dfcac64f4&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>

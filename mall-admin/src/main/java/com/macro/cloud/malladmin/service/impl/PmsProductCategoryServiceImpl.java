@@ -3,7 +3,7 @@ package com.macro.cloud.malladmin.service.impl;
 import com.alibaba.nacos.client.naming.utils.CollectionUtils;
 import com.github.pagehelper.PageHelper;
 import com.macro.cloud.malladmin.dao.PmsProductCategoryAttributeRelationDao;
-import com.macro.cloud.malladmin.dto.PmsProductCategoryDao;
+import com.macro.cloud.malladmin.dao.PmsProductCategoryDao;
 import com.macro.cloud.malladmin.dto.PmsProductCategoryParam;
 import com.macro.cloud.malladmin.dto.PmsProductCategoryWithChildrenItem;
 import com.macro.cloud.malladmin.service.PmsProductCategoryService;

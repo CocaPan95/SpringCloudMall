@@ -1,4 +1,6 @@
-package com.macro.cloud.malladmin.dto;
+package com.macro.cloud.malladmin.dao;
+
+import com.macro.cloud.malladmin.dto.PmsProductCategoryWithChildrenItem;
 
 import java.util.List;
 

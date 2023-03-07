@@ -1,0 +1,228 @@
+Index: mall-portal/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server:\r\n  port: 8085\r\nspring:\r\n  mvc:\r\n    pathmatch:\r\n      matching-strategy: ant_path_matcher\r\n  datasource:\r\n    url: jdbc:mysql://192.168.0.130:3306/coca?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false\r\n    username: root\r\n    password: 123456\r\n    druid:\r\n      initial-size: 5 #连接池初始化大小\r\n      min-idle: 10 #最小空闲连接数\r\n      max-active: 20 #最大连接数\r\n      web-stat-filter:\r\n        exclusions: \"*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*\" #不统计这些请求数据\r\n  redis:\r\n    host: 192.168.0.130 # Redis服务器地址\r\n    database: 0 # Redis数据库索引（默认为0）\r\n    port: 6379 # Redis服务器连接端口\r\n    password: 123456pq # Redis服务器连接密码（默认为空）\r\n    timeout: 3000ms # 连接超时时间（毫秒）\r\n\r\nmybatis:\r\n  mapper-locations:\r\n    - classpath:dao/*.xml\r\n    - classpath*:com/**/mapper/*.xml\r\n# 自定义redis key\r\nredis:\r\n  database: mall\r\n  key:\r\n    authCode: 'ums:authCode'\r\n    orderId: 'oms:orderId'\r\n    member: 'ums:member'\r\n  expire:\r\n    authCode: 90 # 验证码超期时间\r\n    common: 86400 # 24小时\r\nfeign:\r\n  okhttp:\r\n    enabled: true\r\n  client:\r\n    config:\r\n      default:\r\n        connectTimeout: 5000\r\n        readTimeout: 5000\r\n        loggerLevel: basic
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/mall-portal/src/main/resources/application.yml b/mall-portal/src/main/resources/application.yml
+--- a/mall-portal/src/main/resources/application.yml	(revision 2701e70a02f944cf2457868e0368a6761a9e15a9)
++++ b/mall-portal/src/main/resources/application.yml	(date 1678079620414)
+@@ -5,7 +5,7 @@
+     pathmatch:
+       matching-strategy: ant_path_matcher
+   datasource:
+-    url: jdbc:mysql://192.168.0.130:3306/coca?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
++    url: jdbc:mysql://192.168.5.201:3306/coca?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+     username: root
+     password: 123456
+     druid:
+@@ -15,7 +15,7 @@
+       web-stat-filter:
+         exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*" #不统计这些请求数据
+   redis:
+-    host: 192.168.0.130 # Redis服务器地址
++    host: 192.168.5.202 # Redis服务器地址
+     database: 0 # Redis数据库索引（默认为0）
+     port: 6379 # Redis服务器连接端口
+     password: 123456pq # Redis服务器连接密码（默认为空）
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"c9f5ce03-13db-412b-afbc-4e4bb4197dcf\" name=\"Changes\" comment=\"网关+认证+服务注册\">\r\n      <change afterPath=\"$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/PmsProductCategoryController.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dao/PmsProductCategoryAttributeRelationDao.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/PmsProductCategoryParam.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/PmsProductCategoryService.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/PmsProductCategoryServiceImpl.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/validator/FlagValidator.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/validator/FlagValidatorClass.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-admin/src/main/resources/dao/PmsProductCategoryAttributeRelationDao.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsProductCategoryAttributeRelationMapper.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsAdminPermissionRelationMapper.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsIntegrationConsumeSettingMapper.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsMemberReceiveAddressMapper.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsPermissionMapper.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductCategoryAttributeRelation.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductCategoryAttributeRelationExample.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdminPermissionRelation.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdminPermissionRelationExample.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsIntegrationConsumeSetting.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsIntegrationConsumeSettingExample.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberReceiveAddress.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberReceiveAddressExample.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsPermission.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsPermissionExample.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsProductCategoryAttributeRelationMapper.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsAdminPermissionRelationMapper.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsIntegrationConsumeSettingMapper.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsMemberReceiveAddressMapper.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsPermissionMapper.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/compiler.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/compiler.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/mall-admin/src/main/resources/application.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mall-admin/src/main/resources/application.yml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/mall-admin/target/classes/application.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mall-admin/target/classes/application.yml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/domain/Oauth2TokenDto$Oauth2TokenDtoBuilder.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/domain/Oauth2TokenDto$Oauth2TokenDtoBuilder.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/domain/Oauth2TokenDto.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/domain/Oauth2TokenDto.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/mall-gateway/target/classes/application.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mall-gateway/target/classes/application.yml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/mall-mbg/src/main/resources/generator.properties\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mall-mbg/src/main/resources/generator.properties\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UndoLogMapper.class\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UndoLog.class\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UndoLogExample$Criteria.class\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UndoLogExample$Criterion.class\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UndoLogExample$GeneratedCriteria.class\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UndoLogExample.class\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/mall-mbg/target/classes/generator.properties\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mall-mbg/target/classes/generator.properties\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/mall-portal/src/main/resources/application.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mall-portal/src/main/resources/application.yml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n        <option value=\"Interface\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"useMavenConfig\" value=\"true\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2MPgnOdsxcFyEPGAq6EJMr4AtsA\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\r\n    \"RequestMappingsPanelOrder0\": \"0\",\r\n    \"RequestMappingsPanelOrder1\": \"1\",\r\n    \"RequestMappingsPanelWidth0\": \"75\",\r\n    \"RequestMappingsPanelWidth1\": \"75\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"D:/project/SpringCloudMall/mall-admin/src/main/resources/dao\",\r\n    \"project.structure.last.edited\": \"Modules\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"show.run.dashboard.notification\": \"false\",\r\n    \"spring.configuration.checksum\": \"cb3bce0595d9dbea46cce02b1705747f\"\r\n  }\r\n}]]></component>\r\n  <component name=\"ReactorSettings\">\r\n    <option name=\"notificationShown\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\project\\SpringCloudMall\\mall-admin\\src\\main\\resources\\dao\" />\r\n      <recent name=\"D:\\project\\SpringCloudMall\\mall-auth\\src\\main\\resources\" />\r\n      <recent name=\"D:\\project\\SpringCloudMall\\mall-gateway\\src\\main\\resources\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"com.macro.cloud.malladmin.service\" />\r\n      <recent name=\"com.macro.cloud.malladmin.component\" />\r\n      <recent name=\"com.macro.cloud.mallauth.service\" />\r\n      <recent name=\"com.macro.cloud.mallgateway.config\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.Generator\">\r\n    <configuration name=\"Generator\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.macro.cloud.Generator\" />\r\n      <module name=\"mall-mbg\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.macro.cloud.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"MallAdminApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\r\n      <module name=\"mall-admin\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.macro.cloud.malladmin.MallAdminApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"MallAuthApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\r\n      <module name=\"mall-auth\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.macro.cloud.mallauth.MallAuthApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"MallGatewayApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"mall-gateway\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.macro.cloud.mallgateway.MallGatewayApplication\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.macro.cloud.mallgateway.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"MallPortalApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\r\n      <module name=\"mall-portal\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.macro.cloud.mallportal.MallPortalApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.Generator\" />\r\n        <item itemvalue=\"Spring Boot.MallGatewayApplication\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"c9f5ce03-13db-412b-afbc-4e4bb4197dcf\" name=\"Changes\" comment=\"\" />\r\n      <created>1677674797930</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1677674797930</updated>\r\n      <workItem from=\"1677674799295\" duration=\"2161000\" />\r\n      <workItem from=\"1677765010262\" duration=\"227000\" />\r\n      <workItem from=\"1677765277174\" duration=\"3665000\" />\r\n      <workItem from=\"1677808533285\" duration=\"9314000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"网关+认证+服务注册\">\r\n      <created>1677835962883</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1677835962883</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"网关+认证+服务注册\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"网关+认证+服务注册\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/authorization/AuthorizationManager.java</url>\r\n          <line>45</line>\r\n          <option name=\"timeStamp\" value=\"6\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/filter/AuthGlobalFilter.java</url>\r\n          <line>34</line>\r\n          <option name=\"timeStamp\" value=\"7\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/mall-gateway/src/main/java/com/macro/cloud/mallgateway/authorization/AuthorizationManager.java</url>\r\n          <line>80</line>\r\n          <option name=\"timeStamp\" value=\"9\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 2701e70a02f944cf2457868e0368a6761a9e15a9)
++++ b/.idea/workspace.xml	(date 1678152614115)
+@@ -4,51 +4,11 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="c9f5ce03-13db-412b-afbc-4e4bb4197dcf" name="Changes" comment="网关+认证+服务注册">
+-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/PmsProductCategoryController.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dao/PmsProductCategoryAttributeRelationDao.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/PmsProductCategoryParam.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/PmsProductCategoryService.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/PmsProductCategoryServiceImpl.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/validator/FlagValidator.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/validator/FlagValidatorClass.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/dao/PmsProductCategoryAttributeRelationDao.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/PmsProductCategoryAttributeRelationMapper.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsAdminPermissionRelationMapper.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsIntegrationConsumeSettingMapper.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsMemberReceiveAddressMapper.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/UmsPermissionMapper.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductCategoryAttributeRelation.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/PmsProductCategoryAttributeRelationExample.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdminPermissionRelation.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsAdminPermissionRelationExample.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsIntegrationConsumeSetting.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsIntegrationConsumeSettingExample.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberReceiveAddress.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsMemberReceiveAddressExample.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsPermission.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/UmsPermissionExample.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/PmsProductCategoryAttributeRelationMapper.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsAdminPermissionRelationMapper.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsIntegrationConsumeSettingMapper.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsMemberReceiveAddressMapper.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/UmsPermissionMapper.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    <list default="true" id="c9f5ce03-13db-412b-afbc-4e4bb4197dcf" name="Changes" comment="代码嵌入关于sku">
+       <change beforePath="$PROJECT_DIR$/mall-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/application.yml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/application.yml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/domain/Oauth2TokenDto$Oauth2TokenDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/domain/Oauth2TokenDto$Oauth2TokenDtoBuilder.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/domain/Oauth2TokenDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-auth/target/classes/com/macro/cloud/mallauth/domain/Oauth2TokenDto.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/mall-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/target/classes/application.yml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mall-mbg/src/main/resources/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/generator.properties" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/mapper/UndoLogMapper.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UndoLog.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UndoLogExample$Criteria.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UndoLogExample$Criterion.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UndoLogExample$GeneratedCriteria.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/com/macro/cloud/model/UndoLogExample.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mall-mbg/target/classes/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-mbg/target/classes/generator.properties" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/mall-portal/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/resources/application.yml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -101,7 +61,7 @@
+     "project.structure.proportion": "0.15",
+     "project.structure.side.proportion": "0.2",
+     "show.run.dashboard.notification": "false",
+-    "spring.configuration.checksum": "cb3bce0595d9dbea46cce02b1705747f"
++    "spring.configuration.checksum": "3477c2a2b852b1acb98a9405e695e209"
+   }
+ }]]></component>
+   <component name="ReactorSettings">
+@@ -187,6 +147,7 @@
+       <workItem from="1677765010262" duration="227000" />
+       <workItem from="1677765277174" duration="3665000" />
+       <workItem from="1677808533285" duration="9314000" />
++      <workItem from="1678096734436" duration="729000" />
+     </task>
+     <task id="LOCAL-00001" summary="网关+认证+服务注册">
+       <created>1677835962883</created>
+@@ -195,7 +156,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1677835962883</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="代码嵌入关于sku">
++      <created>1678096851031</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1678096851031</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -215,7 +183,8 @@
+   <component name="VcsManagerConfiguration">
+     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+     <MESSAGE value="网关+认证+服务注册" />
+-    <option name="LAST_COMMIT_MESSAGE" value="网关+认证+服务注册" />
++    <MESSAGE value="代码嵌入关于sku" />
++    <option name="LAST_COMMIT_MESSAGE" value="代码嵌入关于sku" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
+Index: mall-gateway/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server:\r\n  port: 8201\r\nspring:\r\n  mvc:\r\n    pathmatch:\r\n      matching-strategy: ant_path_matcher\r\n  cloud:\r\n    gateway:\r\n      discovery:\r\n        locator:\r\n          enabled: true\r\n          lower-case-service-id: true #使用小写service-id\r\n      routes: #配置路由路径\r\n        - id: mall-auth\r\n          uri: lb://mall-auth\r\n          predicates:\r\n            - Path=/mall-auth/**\r\n          filters:\r\n            - StripPrefix=1\r\n        - id: mall-admin\r\n          uri: lb://mall-admin\r\n          predicates:\r\n            - Path=/mall-admin/**\r\n          filters:\r\n            - StripPrefix=1\r\n        - id: mall-portal\r\n          uri: lb://mall-portal\r\n          predicates:\r\n            - Path=/mall-portal/**\r\n          filters:\r\n            - StripPrefix=1\r\n  security:\r\n    oauth2:\r\n      resourceserver:\r\n        jwt:\r\n          jwk-set-uri: 'http://localhost:8201/mall-auth/rsa/publicKey' #配置RSA的公钥访问地址\r\n  redis:\r\n    database: 0\r\n    port: 6379\r\n    host: 192.168.0.130\r\n    password: 123456pq\r\nsecure:\r\n  ignore:\r\n    urls: #配置白名单路径\r\n      - \"/doc.html\"\r\n      - \"/swagger-ui.html\"\r\n      - \"/swagger-resources/**\"\r\n      - \"/swagger/**\"\r\n      - \"/*/v2/api-docs\"\r\n      - \"/*/*.js\"\r\n      - \"/*/*.css\"\r\n      - \"/*/*.png\"\r\n      - \"/*/*.ico\"\r\n      - \"/webjars/**\"\r\n      - \"/actuator/**\"\r\n      - \"/mall-auth/oauth/token\"\r\n      - \"/mall-auth/rsa/publicKey\"\r\n      - \"/mall-search/**\"\r\n      - \"/mall-portal/sso/login\"\r\n      - \"/mall-portal/sso/register\"\r\n      - \"/mall-portal/sso/getAuthCode\"\r\n      - \"/mall-portal/home/**\"\r\n      - \"/mall-portal/product/**\"\r\n      - \"/mall-portal/brand/**\"\r\n      - \"/mall-admin/admin/login\"\r\n      - \"/mall-admin/admin/register\"\r\n      - \"/mall-admin/admin/loadByUsername\"\r\n      - \"/mall-admin/minio/upload\"\r\nmanagement: #开启SpringBoot Admin的监控\r\n  endpoints:\r\n    web:\r\n      exposure:\r\n        include: '*'\r\n  endpoint:\r\n    health:\r\n      show-details: always\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/mall-gateway/src/main/resources/application.yml b/mall-gateway/src/main/resources/application.yml
+--- a/mall-gateway/src/main/resources/application.yml	(revision 2701e70a02f944cf2457868e0368a6761a9e15a9)
++++ b/mall-gateway/src/main/resources/application.yml	(date 1678079620404)
+@@ -37,7 +37,7 @@
+   redis:
+     database: 0
+     port: 6379
+-    host: 192.168.0.130
++    host: 192.168.5.202
+     password: 123456pq
+ secure:
+   ignore:
+Index: mall-admin/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server:\r\n  port: 8080\r\nspring:\r\n  mvc:\r\n    pathmatch:\r\n      matching-strategy: ant_path_matcher\r\n  datasource:\r\n    url: jdbc:mysql://192.168.0.130:3306/coca?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false\r\n    username: root\r\n    password: 123456\r\n    druid:\r\n      initial-size: 5 #连接池初始化大小\r\n      min-idle: 10 #最小空闲连接数\r\n      max-active: 20 #最大连接数\r\n      web-stat-filter:\r\n        exclusions: \"*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*\" #不统计这些请求数据\r\n      stat-view-servlet: #访问监控网页的登录用户名和密码\r\n        login-username: druid\r\n        login-password: druid\r\n  redis:\r\n    database: 0\r\n    port: 6379\r\n    host: 192.168.0.130\r\n    password: 123456pq\r\n\r\nmybatis:\r\n  mapper-locations:\r\n    - classpath:dao/*.xml\r\n    - classpath*:com/**/mapper/*.xml\r\n\r\nredis:\r\n  database: mall\r\n  key:\r\n    admin: 'ums:admin'\r\n  expire:\r\n    common: 86400 # 24小时\r\n\r\nmanagement:\r\n  endpoints:\r\n    web:\r\n      exposure:\r\n        include: '*'\r\n\r\nfeign:\r\n  okhttp:\r\n    enabled: true\r\n  client:\r\n    config:\r\n      default:\r\n        connectTimeout: 5000\r\n        readTimeout: 5000\r\n        loggerLevel: basic\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/mall-admin/src/main/resources/application.yml b/mall-admin/src/main/resources/application.yml
+--- a/mall-admin/src/main/resources/application.yml	(revision 2701e70a02f944cf2457868e0368a6761a9e15a9)
++++ b/mall-admin/src/main/resources/application.yml	(date 1678079620423)
+@@ -5,7 +5,7 @@
+     pathmatch:
+       matching-strategy: ant_path_matcher
+   datasource:
+-    url: jdbc:mysql://192.168.0.130:3306/coca?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
++    url: jdbc:mysql://192.168.5.201:3306/coca?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+     username: root
+     password: 123456
+     druid:
+@@ -20,7 +20,7 @@
+   redis:
+     database: 0
+     port: 6379
+-    host: 192.168.0.130
++    host: 192.168.5.202
+     password: 123456pq
+ 
+ mybatis:
+Index: mall-admin/target/classes/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server:\r\n  port: 8080\r\nspring:\r\n  mvc:\r\n    pathmatch:\r\n      matching-strategy: ant_path_matcher\r\n  datasource:\r\n    url: jdbc:mysql://192.168.0.130:3306/coca?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false\r\n    username: root\r\n    password: 123456\r\n    druid:\r\n      initial-size: 5 #连接池初始化大小\r\n      min-idle: 10 #最小空闲连接数\r\n      max-active: 20 #最大连接数\r\n      web-stat-filter:\r\n        exclusions: \"*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*\" #不统计这些请求数据\r\n      stat-view-servlet: #访问监控网页的登录用户名和密码\r\n        login-username: druid\r\n        login-password: druid\r\n  redis:\r\n    database: 0\r\n    port: 6379\r\n    host: 192.168.0.130\r\n    password: 123456pq\r\n\r\nmybatis:\r\n  mapper-locations:\r\n    - classpath:dao/*.xml\r\n    - classpath*:com/**/mapper/*.xml\r\n\r\nredis:\r\n  database: mall\r\n  key:\r\n    admin: 'ums:admin'\r\n  expire:\r\n    common: 86400 # 24小时\r\n\r\nmanagement:\r\n  endpoints:\r\n    web:\r\n      exposure:\r\n        include: '*'\r\n\r\nfeign:\r\n  okhttp:\r\n    enabled: true\r\n  client:\r\n    config:\r\n      default:\r\n        connectTimeout: 5000\r\n        readTimeout: 5000\r\n        loggerLevel: basic\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/mall-admin/target/classes/application.yml b/mall-admin/target/classes/application.yml
+--- a/mall-admin/target/classes/application.yml	(revision 2701e70a02f944cf2457868e0368a6761a9e15a9)
++++ b/mall-admin/target/classes/application.yml	(date 1678079622266)
+@@ -5,7 +5,7 @@
+     pathmatch:
+       matching-strategy: ant_path_matcher
+   datasource:
+-    url: jdbc:mysql://192.168.0.130:3306/coca?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
++    url: jdbc:mysql://192.168.5.201:3306/coca?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+     username: root
+     password: 123456
+     druid:
+@@ -20,7 +20,7 @@
+   redis:
+     database: 0
+     port: 6379
+-    host: 192.168.0.130
++    host: 192.168.5.202
+     password: 123456pq
+ 
+ mybatis:
+Index: mall-gateway/target/classes/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server:\r\n  port: 8201\r\nspring:\r\n  mvc:\r\n    pathmatch:\r\n      matching-strategy: ant_path_matcher\r\n  cloud:\r\n    gateway:\r\n      discovery:\r\n        locator:\r\n          enabled: true\r\n          lower-case-service-id: true #使用小写service-id\r\n      routes: #配置路由路径\r\n        - id: mall-auth\r\n          uri: lb://mall-auth\r\n          predicates:\r\n            - Path=/mall-auth/**\r\n          filters:\r\n            - StripPrefix=1\r\n        - id: mall-admin\r\n          uri: lb://mall-admin\r\n          predicates:\r\n            - Path=/mall-admin/**\r\n          filters:\r\n            - StripPrefix=1\r\n        - id: mall-portal\r\n          uri: lb://mall-portal\r\n          predicates:\r\n            - Path=/mall-portal/**\r\n          filters:\r\n            - StripPrefix=1\r\n  security:\r\n    oauth2:\r\n      resourceserver:\r\n        jwt:\r\n          jwk-set-uri: 'http://localhost:8201/mall-auth/rsa/publicKey' #配置RSA的公钥访问地址\r\n  redis:\r\n    database: 0\r\n    port: 6379\r\n    host: 192.168.0.130\r\n    password: 123456pq\r\nsecure:\r\n  ignore:\r\n    urls: #配置白名单路径\r\n      - \"/doc.html\"\r\n      - \"/swagger-ui.html\"\r\n      - \"/swagger-resources/**\"\r\n      - \"/swagger/**\"\r\n      - \"/*/v2/api-docs\"\r\n      - \"/*/*.js\"\r\n      - \"/*/*.css\"\r\n      - \"/*/*.png\"\r\n      - \"/*/*.ico\"\r\n      - \"/webjars/**\"\r\n      - \"/actuator/**\"\r\n      - \"/mall-auth/oauth/token\"\r\n      - \"/mall-auth/rsa/publicKey\"\r\n      - \"/mall-search/**\"\r\n      - \"/mall-portal/sso/login\"\r\n      - \"/mall-portal/sso/register\"\r\n      - \"/mall-portal/sso/getAuthCode\"\r\n      - \"/mall-portal/home/**\"\r\n      - \"/mall-portal/product/**\"\r\n      - \"/mall-portal/brand/**\"\r\n      - \"/mall-admin/admin/login\"\r\n      - \"/mall-admin/admin/register\"\r\n      - \"/mall-admin/admin/loadByUsername\"\r\n      - \"/mall-admin/minio/upload\"\r\nmanagement: #开启SpringBoot Admin的监控\r\n  endpoints:\r\n    web:\r\n      exposure:\r\n        include: '*'\r\n  endpoint:\r\n    health:\r\n      show-details: always\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/mall-gateway/target/classes/application.yml b/mall-gateway/target/classes/application.yml
+--- a/mall-gateway/target/classes/application.yml	(revision 2701e70a02f944cf2457868e0368a6761a9e15a9)
++++ b/mall-gateway/target/classes/application.yml	(date 1678079667759)
+@@ -37,7 +37,7 @@
+   redis:
+     database: 0
+     port: 6379
+-    host: 192.168.0.130
++    host: 192.168.5.202
+     password: 123456pq
+ secure:
+   ignore:
