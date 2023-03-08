@@ -4,12 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9f5ce03-13db-412b-afbc-4e4bb4197dcf" name="Changes" comment="管理端代码提交">
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/domain/PmsPortalProductDetail.java" afterDir="false" />
+    <list default="true" id="c9f5ce03-13db-412b-afbc-4e4bb4197dcf" name="Changes" comment="移动端商品">
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/OmsOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dao/OmsOrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/OmsOrderDeliveryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/OmsOrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/OmsOrderQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/OmsOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/OmsOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/dao/OmsOrderDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/OmsOrderItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/OmsOrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/OmsOrderOperateHistoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderItemExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderOperateHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderOperateHistoryExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/OmsOrderItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/OmsOrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/OmsOrderOperateHistoryMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/controller/PmsPortalProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/controller/PmsPortalProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/PmsPortalProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/PmsPortalProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/impl/PmsPortalProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/impl/PmsPortalProductServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +97,7 @@
       <recent name="com.macro.cloud.mallgateway.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MallPortalApplication">
+  <component name="RunManager" selected="Application.Generator">
     <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.macro.cloud.Generator" />
       <module name="mall-mbg" />
@@ -185,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678244885826</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="移动端商品">
+      <created>1678252428933</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678252428933</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +231,8 @@
     <MESSAGE value="品牌和商品类别" />
     <MESSAGE value="产品其他相关内容" />
     <MESSAGE value="管理端代码提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="管理端代码提交" />
+    <MESSAGE value="移动端商品" />
+    <option name="LAST_COMMIT_MESSAGE" value="移动端商品" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
