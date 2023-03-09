@@ -3,10 +3,12 @@ package com.macro.cloud.malladmin.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.macro.cloud.malladmin.dao.OmsOrderDao;
 import com.macro.cloud.malladmin.dao.OmsOrderOperateHistoryDao;
-import com.macro.cloud.malladmin.dto.OmsOrderDeliveryParam;
-import com.macro.cloud.malladmin.dto.OmsOrderQueryParam;
+import com.macro.cloud.malladmin.dto.*;
 import com.macro.cloud.malladmin.service.OmsOrderService;
+import com.macro.cloud.mapper.OmsOrderMapper;
+import com.macro.cloud.mapper.OmsOrderOperateHistoryMapper;
 import com.macro.cloud.model.OmsOrder;
+import com.macro.cloud.model.OmsOrderExample;
 import com.macro.cloud.model.OmsOrderOperateHistory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,8 +21,12 @@ import java.util.stream.Collectors;
 public class OmsOrderServiceImpl implements OmsOrderService {
 
     @Autowired
+    private OmsOrderMapper orderMapper;
+    @Autowired
     private OmsOrderDao orderDao;
 
+    @Autowired
+    private OmsOrderOperateHistoryMapper orderOperateHistoryMapper;
     @Autowired
     private OmsOrderOperateHistoryDao orderOperateHistoryDao;
 
@@ -46,6 +52,79 @@ public class OmsOrderServiceImpl implements OmsOrderService {
                     return history;
                 }).collect(Collectors.toList());
         orderOperateHistoryDao.insertList(operateHistoryList);
+        return count;
+    }
+    @Override
+    public int close(List<Long> ids, String note) {
+        OmsOrder record = new OmsOrder();
+        record.setStatus(4);
+        OmsOrderExample example = new OmsOrderExample();
+        example.createCriteria().andDeleteStatusEqualTo(0).andIdIn(ids);
+        int count = orderMapper.updateByExampleSelective(record, example);
+        List<OmsOrderOperateHistory> historyList = ids.stream().map(orderId -> {
+            OmsOrderOperateHistory history = new OmsOrderOperateHistory();
+            history.setOrderId(orderId);
+            history.setCreateTime(new Date());
+            history.setOperateMan("后台管理员");
+            history.setOrderStatus(4);
+            history.setNote("订单关闭:"+note);
+            return history;
+        }).collect(Collectors.toList());
+        orderOperateHistoryDao.insertList(historyList);
+        return count;
+    }
+    @Override
+    public int delete(List<Long> ids) {
+        OmsOrder record = new OmsOrder();
+        record.setDeleteStatus(1);
+        OmsOrderExample example = new OmsOrderExample();
+        example.createCriteria().andDeleteStatusEqualTo(0).andIdIn(ids);
+        return orderMapper.updateByExampleSelective(record, example);
+    }
+    @Override
+    public OmsOrderDetail detail(Long id) {
+        return orderDao.getDetail(id);
+    }
+    @Override
+    public int updateReceiverInfo(OmsReceiverInfoParam receiverInfoParam) {
+        OmsOrder order = new OmsOrder();
+        order.setId(receiverInfoParam.getOrderId());
+        order.setReceiverName(receiverInfoParam.getReceiverName());
+        order.setReceiverPhone(receiverInfoParam.getReceiverPhone());
+        order.setReceiverPostCode(receiverInfoParam.getReceiverPostCode());
+        order.setReceiverDetailAddress(receiverInfoParam.getReceiverDetailAddress());
+        order.setReceiverProvince(receiverInfoParam.getReceiverProvince());
+        order.setReceiverCity(receiverInfoParam.getReceiverCity());
+        order.setReceiverRegion(receiverInfoParam.getReceiverRegion());
+        order.setModifyTime(new Date());
+        int count = orderMapper.updateByPrimaryKeySelective(order);
+        //插入操作记录
+        OmsOrderOperateHistory history = new OmsOrderOperateHistory();
+        history.setOrderId(receiverInfoParam.getOrderId());
+        history.setCreateTime(new Date());
+        history.setOperateMan("后台管理员");
+        history.setOrderStatus(receiverInfoParam.getStatus());
+        history.setNote("修改收货人信息");
+        orderOperateHistoryMapper.insert(history);
+        return count;
+    }
+
+    @Override
+    public int updateMoneyInfo(OmsMoneyInfoParam moneyInfoParam) {
+        OmsOrder order = new OmsOrder();
+        order.setId(moneyInfoParam.getOrderId());
+        order.setFreightAmount(moneyInfoParam.getFreightAmount());
+        order.setDiscountAmount(moneyInfoParam.getDiscountAmount());
+        order.setModifyTime(new Date());
+        int count = orderMapper.updateByPrimaryKeySelective(order);
+        //插入操作记录
+        OmsOrderOperateHistory history = new OmsOrderOperateHistory();
+        history.setOrderId(moneyInfoParam.getOrderId());
+        history.setCreateTime(new Date());
+        history.setOperateMan("后台管理员");
+        history.setOrderStatus(moneyInfoParam.getStatus());
+        history.setNote("修改费用信息");
+        orderOperateHistoryMapper.insert(history);
         return count;
     }
 }

@@ -1,7 +1,6 @@
 package com.macro.cloud.malladmin.controller;
 
-import com.macro.cloud.malladmin.dto.OmsOrderDeliveryParam;
-import com.macro.cloud.malladmin.dto.OmsOrderQueryParam;
+import com.macro.cloud.malladmin.dto.*;
 import com.macro.cloud.malladmin.service.OmsOrderService;
 import com.macro.cloud.mallcommon.api.CommonPage;
 import com.macro.cloud.mallcommon.api.CommonResult;
@@ -40,6 +39,55 @@ public class OmsOrderController {
     @ResponseBody
     public CommonResult delivery(@RequestBody List<OmsOrderDeliveryParam> deliveryParamList) {
         int count = orderService.delivery(deliveryParamList);
+        if (count > 0) {
+            return CommonResult.success(count);
+        }
+        return CommonResult.failed();
+    }
+    @ApiOperation("批量关闭订单")
+    @RequestMapping(value = "/update/close", method = RequestMethod.POST)
+    @ResponseBody
+    public CommonResult close(@RequestParam("ids") List<Long> ids, @RequestParam String note) {
+        int count = orderService.close(ids, note);
+        if (count > 0) {
+            return CommonResult.success(count);
+        }
+        return CommonResult.failed();
+    }
+
+    @ApiOperation("批量删除订单")
+    @RequestMapping(value = "/delete", method = RequestMethod.POST)
+    @ResponseBody
+    public CommonResult delete(@RequestParam("ids") List<Long> ids) {
+        int count = orderService.delete(ids);
+        if (count > 0) {
+            return CommonResult.success(count);
+        }
+        return CommonResult.failed();
+    }
+    @ApiOperation("获取订单详情:订单信息、商品信息、操作记录")
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    @ResponseBody
+    public CommonResult<OmsOrderDetail> detail(@PathVariable Long id) {
+        OmsOrderDetail orderDetailResult = orderService.detail(id);
+        return CommonResult.success(orderDetailResult);
+    }
+    @ApiOperation("修改收货人信息")
+    @RequestMapping(value = "/update/receiverInfo", method = RequestMethod.POST)
+    @ResponseBody
+    public CommonResult updateReceiverInfo(@RequestBody OmsReceiverInfoParam receiverInfoParam) {
+        int count = orderService.updateReceiverInfo(receiverInfoParam);
+        if (count > 0) {
+            return CommonResult.success(count);
+        }
+        return CommonResult.failed();
+    }
+
+    @ApiOperation("修改订单费用信息")
+    @RequestMapping(value = "/update/moneyInfo", method = RequestMethod.POST)
+    @ResponseBody
+    public CommonResult updateReceiverInfo(@RequestBody OmsMoneyInfoParam moneyInfoParam) {
+        int count = orderService.updateMoneyInfo(moneyInfoParam);
         if (count > 0) {
             return CommonResult.success(count);
         }

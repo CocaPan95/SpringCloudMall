@@ -1,7 +1,6 @@
 package com.macro.cloud.malladmin.service;
 
-import com.macro.cloud.malladmin.dto.OmsOrderDeliveryParam;
-import com.macro.cloud.malladmin.dto.OmsOrderQueryParam;
+import com.macro.cloud.malladmin.dto.*;
 import com.macro.cloud.model.OmsOrder;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -22,4 +21,32 @@ public interface OmsOrderService {
      */
     @Transactional
     int delivery(List<OmsOrderDeliveryParam> deliveryParamList);
+
+    /**
+     * 批量关闭订单
+     */
+    @Transactional
+    int close(List<Long> ids, String note);
+
+    /**
+     * 批量删除订单
+     */
+    int delete(List<Long> ids);
+
+    /**
+     * 获取指定订单详情
+     */
+    OmsOrderDetail detail(Long id);
+
+    /**
+     * 修改订单收货人信息
+     */
+    @Transactional
+    int updateReceiverInfo(OmsReceiverInfoParam receiverInfoParam);
+
+    /**
+     * 修改订单费用信息
+     */
+    @Transactional
+    int updateMoneyInfo(OmsMoneyInfoParam moneyInfoParam);
 }
