@@ -16,7 +16,7 @@ public class ConfirmOrderResult {
     //用户收货地址列表
     private List<UmsMemberReceiveAddress> memberReceiveAddressList;
     //用户可用优惠券列表
-   // private List<SmsCouponHistoryDetail> couponHistoryDetailList;
+    private List<SmsCouponHistoryDetail> couponHistoryDetailList;
     //积分使用规则
     private UmsIntegrationConsumeSetting integrationConsumeSetting;
     //会员持有的积分
@@ -40,13 +40,13 @@ public class ConfirmOrderResult {
         this.memberReceiveAddressList = memberReceiveAddressList;
     }
 
-//    public List<SmsCouponHistoryDetail> getCouponHistoryDetailList() {
-//        return couponHistoryDetailList;
-//    }
-//
-//    public void setCouponHistoryDetailList(List<SmsCouponHistoryDetail> couponHistoryDetailList) {
-//        this.couponHistoryDetailList = couponHistoryDetailList;
-//    }
+    public List<SmsCouponHistoryDetail> getCouponHistoryDetailList() {
+        return couponHistoryDetailList;
+    }
+
+    public void setCouponHistoryDetailList(List<SmsCouponHistoryDetail> couponHistoryDetailList) {
+        this.couponHistoryDetailList = couponHistoryDetailList;
+    }
 
     public UmsIntegrationConsumeSetting getIntegrationConsumeSetting() {
         return integrationConsumeSetting;

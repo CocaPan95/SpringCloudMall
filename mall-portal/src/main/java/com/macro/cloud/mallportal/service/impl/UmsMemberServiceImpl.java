@@ -158,7 +158,14 @@ public class UmsMemberServiceImpl implements UmsMemberService {
         }
         return null;
     }
-
+    @Override
+    public void updateIntegration(Long id, Integer integration) {
+        UmsMember record=new UmsMember();
+        record.setId(id);
+        record.setIntegration(integration);
+        memberMapper.updateByPrimaryKeySelective(record);
+        memberCacheService.delMember(id);
+    }
     private boolean verifyAuthCode(String authCode, String telephone) {
         if (StringUtils.isEmpty(authCode)) {
             return false;
