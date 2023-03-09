@@ -4,29 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9f5ce03-13db-412b-afbc-4e4bb4197dcf" name="Changes" comment="代码嵌入">
-      <change afterPath="$PROJECT_DIR$/mall-monitor/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-monitor/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-monitor/src/main/java/com/macro/cloud/mallmonitor/MallMonitorApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-monitor/src/main/java/com/macro/cloud/mallmonitor/config/SecuritySecureConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-monitor/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-monitor/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-monitor/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-monitor/src/test/java/com/macro/cloud/mallmonitor/MallMonitorApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_3_7_9_31__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_3_7_9_31__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c9f5ce03-13db-412b-afbc-4e4bb4197dcf" name="Changes" comment="监控中心">
+      <change afterPath="$PROJECT_DIR$/mall-search/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/java/com/macro/cloud/mallsearch/MallSearchApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/java/com/macro/cloud/mallsearch/config/MyBatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/java/com/macro/cloud/mallsearch/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/java/com/macro/cloud/mallsearch/controller/EsProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/java/com/macro/cloud/mallsearch/dao/EsProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/java/com/macro/cloud/mallsearch/domain/EsProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/java/com/macro/cloud/mallsearch/domain/EsProductAttributeValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/java/com/macro/cloud/mallsearch/domain/EsProductRelatedInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/java/com/macro/cloud/mallsearch/repository/EsProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/resources/bootstrap-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/src/test/java/com/macro/cloud/mallsearch/MallSearchApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-admin/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-portal/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-portal/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/target/classes/com/macro/cloud/mallportal/domain/ConfirmOrderResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/target/classes/com/macro/cloud/mallportal/domain/ConfirmOrderResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/target/classes/com/macro/cloud/mallportal/service/UmsMemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/target/classes/com/macro/cloud/mallportal/service/UmsMemberService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/target/classes/com/macro/cloud/mallportal/service/impl/OmsPortalOrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/target/classes/com/macro/cloud/mallportal/service/impl/OmsPortalOrderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/target/classes/com/macro/cloud/mallportal/service/impl/UmsMemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/target/classes/com/macro/cloud/mallportal/service/impl/UmsMemberServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/project/SpringCloudMall/mall-monitor/src/main/resources",
+    "last_opened_file_path": "D:/project/SpringCloudMall/mall-search/src/main/java/com/macro/cloud/mallsearch/config",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -89,18 +89,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\SpringCloudMall\mall-search\src\main\java\com\macro\cloud\mallsearch\config" />
+      <recent name="D:\project\SpringCloudMall\mall-search\src\main\resources" />
       <recent name="D:\project\SpringCloudMall\mall-monitor\src\main\resources" />
       <recent name="D:\project\SpringCloudMall\mall-portal\src\main\resources\dao" />
       <recent name="D:\project\SpringCloudMall\mall-admin\src\main\java\com\macro\cloud\malladmin\controller" />
-      <recent name="D:\project\SpringCloudMall\mall-admin\src\main\resources\dao" />
-      <recent name="D:\project\SpringCloudMall\mall-auth\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.macro.cloud.mallsearch.controller" />
+      <recent name="com.macro.cloud.mallsearch.repository" />
+      <recent name="com.macro.cloud.mallsearch.domain" />
+      <recent name="com.macro.cloud.mallsearch.dao" />
       <recent name="com.macro.cloud.mallmonitor.config" />
-      <recent name="com.macro.cloud.mallportal.domain" />
-      <recent name="com.macro.cloud.malladmin.service" />
-      <recent name="com.macro.cloud.malladmin.component" />
-      <recent name="com.macro.cloud.mallauth.service" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.MallMonitorApplication">
@@ -154,6 +154,13 @@
     <configuration name="MallPortalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mall-portal" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.macro.cloud.mallportal.MallPortalApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall-search" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.macro.cloud.mallsearch.MallSearchApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -242,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678348900217</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="监控中心">
+      <created>1678371691644</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678371691644</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +282,8 @@
     <MESSAGE value="移动端商品" />
     <MESSAGE value="后台订单的一部分" />
     <MESSAGE value="代码嵌入" />
-    <option name="LAST_COMMIT_MESSAGE" value="代码嵌入" />
+    <MESSAGE value="监控中心" />
+    <option name="LAST_COMMIT_MESSAGE" value="监控中心" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

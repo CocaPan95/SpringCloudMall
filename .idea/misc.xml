@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/mall-portal/pom.xml" />
         <option value="$PROJECT_DIR$/mall-auth/mall-portal/pom.xml" />
         <option value="$PROJECT_DIR$/mall-monitor/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-search/pom.xml" />
       </list>
     </option>
   </component>

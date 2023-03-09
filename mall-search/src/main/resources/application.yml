@@ -1,13 +1,13 @@
 server:
-  port: 8080
+  port: 8081
 spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
   datasource:
-    url: jdbc:mysql://192.168.0.130:3306/coca?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+    url: jdbc:mysql://localhost:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
     username: root
-    password: 123456
+    password: root
     druid:
       initial-size: 5 #连接池初始化大小
       min-idle: 10 #最小空闲连接数
@@ -17,39 +17,24 @@ spring:
       stat-view-servlet: #访问监控网页的登录用户名和密码
         login-username: druid
         login-password: druid
-  redis:
-    database: 0
-    port: 6379
-    host: 192.168.0.130
-    password: 123456pq
-
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+  elasticsearch:
+    uris: localhost:9200
 mybatis:
   mapper-locations:
     - classpath:dao/*.xml
     - classpath*:com/**/mapper/*.xml
-
-redis:
-  database: mall
-  key:
-    admin: 'ums:admin'
-  expire:
-    common: 86400 # 24小时
-
-management:
+management: #开启SpringBoot Admin的监控
   endpoints:
     web:
       exposure:
         include: '*'
-
-feign:
-  okhttp:
-    enabled: true
-  client:
-    config:
-      default:
-        connectTimeout: 5000
-        readTimeout: 5000
-        loggerLevel: basic
+  endpoint:
+    health:
+      show-details: always
 
 
 

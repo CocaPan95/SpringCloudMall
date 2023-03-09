@@ -5,7 +5,7 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
   datasource:
-    url: jdbc:mysql://192.168.5.201:3306/coca?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+    url: jdbc:mysql://192.168.0.130:3306/coca?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
     username: root
     password: 123456
     druid:
@@ -15,12 +15,17 @@ spring:
       web-stat-filter:
         exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*" #不统计这些请求数据
   redis:
-    host: 192.168.5.202 # Redis服务器地址
+    host: 192.168.0.130 # Redis服务器地址
     database: 0 # Redis数据库索引（默认为0）
     port: 6379 # Redis服务器连接端口
     password: 123456pq # Redis服务器连接密码（默认为空）
     timeout: 3000ms # 连接超时时间（毫秒）
-
+  rabbitmq:
+    host: 192.168.0.130
+    port: 5672
+    virtual-host: /
+    username: admin
+    password: 123456
 mybatis:
   mapper-locations:
     - classpath:dao/*.xml

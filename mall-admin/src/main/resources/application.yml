@@ -5,7 +5,7 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
   datasource:
-    url: jdbc:mysql://192.168.5.201:3306/coca?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+    url: jdbc:mysql://192.168.0.130:3306/coca?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
     username: root
     password: 123456
     druid:
@@ -20,7 +20,7 @@ spring:
   redis:
     database: 0
     port: 6379
-    host: 192.168.5.202
+    host: 192.168.0.130
     password: 123456pq
 
 mybatis:
