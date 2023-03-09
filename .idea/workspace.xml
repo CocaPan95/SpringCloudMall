@@ -4,80 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9f5ce03-13db-412b-afbc-4e4bb4197dcf" name="Changes" comment="后台订单的一部分">
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/OmsCompanyAddressController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/OmsOrderReturnApplyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/OmsOrderReturnReasonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/OmsOrderSettingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dao/OmsOrderReturnApplyDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/OmsMoneyInfoParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/OmsOrderReturnApplyResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/OmsReceiverInfoParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/OmsReturnApplyQueryParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/dto/OmsUpdateStatusParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/OmsCompanyAddressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/OmsOrderReturnApplyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/OmsOrderReturnReasonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/OmsOrderSettingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/OmsCompanyAddressServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/OmsOrderReturnApplyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/OmsOrderReturnReasonServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/OmsOrderSettingServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-admin/src/main/resources/dao/OmsOrderReturnApplyDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/OmsCartItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/OmsCompanyAddressMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/OmsOrderReturnApplyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/OmsOrderReturnReasonMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/mapper/OmsOrderSettingMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsCartItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsCartItemExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsCompanyAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsCompanyAddressExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderReturnApply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderReturnApplyExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderReturnReason.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderReturnReasonExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderSetting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/java/com/macro/cloud/model/OmsOrderSettingExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/OmsCartItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/OmsCompanyAddressMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/OmsOrderReturnApplyMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/OmsOrderReturnReasonMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-mbg/src/main/resources/com/macro/cloud/mapper/OmsOrderSettingMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/component/CancelOrderSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/controller/OmsCartItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/controller/OmsPortalOrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/controller/OmsPortalOrderReturnApplyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/controller/UmsMemberReceiveAddressController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/dao/PortalOrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/dao/PortalOrderItemDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/dao/PortalProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/domain/CartProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/domain/CartPromotionItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/domain/ConfirmOrderResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/domain/OmsOrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/domain/OmsOrderReturnApplyParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/domain/OrderParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/domain/QueueEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/OmsCartItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/OmsPortalOrderReturnApplyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/OmsPortalOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/OmsPromotionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/UmsMemberReceiveAddressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/impl/OmsCartItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/impl/OmsPortalOrderReturnApplyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/impl/OmsPortalOrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/impl/OmsPromotionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/service/impl/UmsMemberReceiveAddressServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/resources/dao/PortalOrderDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/resources/dao/PortalOrderItemDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/resources/dao/PortalProductDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="c9f5ce03-13db-412b-afbc-4e4bb4197dcf" name="Changes" comment="代码嵌入">
+      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/component/CancelOrderReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/component/OrderTimeOutCancelTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-portal/src/main/java/com/macro/cloud/mallportal/domain/PromotionProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/OmsOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/controller/OmsOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/OmsOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/OmsOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/OmsOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-admin/src/main/java/com/macro/cloud/malladmin/service/impl/OmsOrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-portal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-portal/src/main/resources/dao/PortalProductDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-portal/src/main/resources/dao/PortalProductDao.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -126,6 +58,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/project/SpringCloudMall/mall-admin/src/main/resources/dao",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -144,6 +77,7 @@
       <recent name="D:\project\SpringCloudMall\mall-gateway\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.macro.cloud.mallportal.domain" />
       <recent name="com.macro.cloud.malladmin.service" />
       <recent name="com.macro.cloud.malladmin.component" />
       <recent name="com.macro.cloud.mallauth.service" />
@@ -268,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678268899030</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="代码嵌入">
+      <created>1678347667841</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678347667841</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +234,8 @@
     <MESSAGE value="管理端代码提交" />
     <MESSAGE value="移动端商品" />
     <MESSAGE value="后台订单的一部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="后台订单的一部分" />
+    <MESSAGE value="代码嵌入" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码嵌入" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
